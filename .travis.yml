@@ -5,8 +5,8 @@ install:
 - sudo apt-get install libreoffice -y
 
 script:
-- scalc --convert-to pdf:writer_pdf_Export Astronav-Formular-Mond_Planeten.ods
-- scalc --convert-to pdf:writer_pdf_Export Astronav-Formular-Sonne.ods
+- /usr/lib/libreoffice/program/scalc --convert-to pdf:writer_pdf_Export Astronav-Formular-Mond_Planeten.ods
+- /usr/lib/libreoffice/program/scalc --convert-to pdf:writer_pdf_Export Astronav-Formular-Sonne.ods
 
 deploy:
   provider: releases
