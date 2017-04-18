@@ -1,8 +1,8 @@
 language: python
 
 install:
-- add-apt-repository ppa:libreoffice/ppa
-- apt-get install libreoffice
+- sudo add-apt-repository ppa:libreoffice/ppa
+- sudo apt-get install libreoffice -y
 
 script:
 - scalc --convert-to pdf:writer_pdf_Export Astronav-Formular-Mond_Planeten.ods
